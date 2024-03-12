@@ -15,13 +15,24 @@
 //             // 'Bintang Diandra Putra', 'Diandra Putra' <=---- ini adalah Argumen yang kita ketik
 // addName('Bintang Diandra Putra', 'Diandra Putra')     // <------- ini semua bisa di sebut patching data patching parameter patching value dll (intinya tentang patching)
 
+// function addName() {
+//     console.log(arguments[0])      //Arguments pemanggilan langsung bisa di tambahkan  ['1', '2', '3'] untuk memanggi data
+//     console.log(arguments[1])
+//     console.log(arguments[2])
+// }
+
+// addName('Bintang Diandra Putra', 'Diandra Putra', 'Aril Noah')
+
+
+// alert('check update')
+
+
+// Contoh Function dan Looping
 function addName() {
-    console.log(arguments[0])      //Arguments pemanggilan langsung bisa di tambahkan  ['1', '2', '3'] untuk memanggi data
-    console.log(arguments[1])
-    console.log(arguments[2])
+    for (let i = 0; i < arguments.length; i++) {
+        console.log('Nama Lengkap : ', arguments[i])
+        
+    }
 }
 
-addName('Bintang Diandra Putra', 'Diandra Putra', 'Aril Noah')
-
-
-alert('check update')
+addName('Bintang Diandra Putra', 'Diandra Putra', 'Aril Noah', 'Keroro Ampas')

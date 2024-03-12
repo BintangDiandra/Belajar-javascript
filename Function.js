@@ -14,3 +14,6 @@ function addName(firstname, lastname) {         // pengiriman data ke function
 }
             // 'Bintang Diandra Putra', 'Diandra Putra' <=---- ini adalah Argumen yang kita ketik
 addName('Bintang Diandra Putra', 'Diandra Putra')     // <------- ini semua bisa di sebut patching data patching parameter patching value dll (intinya tentang patching)
+
+
+alert('Hello World ! Its Me Bintang')

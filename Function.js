@@ -22,3 +22,6 @@ function addName() {
 }
 
 addName('Bintang Diandra Putra', 'Diandra Putra', 'Aril Noah')
+
+
+alert('check update')

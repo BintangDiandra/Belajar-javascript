@@ -36,5 +36,3 @@ function addName() {
 }
 
 addName('Bintang Diandra Putra', 'Diandra Putra', 'Aril Noah', 'Keroro Ampas')
-
-alert(addName)

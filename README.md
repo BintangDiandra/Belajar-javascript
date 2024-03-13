@@ -7,3 +7,7 @@ Isinya tentang basic-basic syntax Javascript :
 - DOM Js
 - Function Js
 - Looping Js
+
+Co pilot/Ai : 
+-
+- Codenium

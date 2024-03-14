@@ -74,3 +74,6 @@ const sum3 = (x, y) => {
 sum1(5, 1)
 sum2(1, 2)
 sum3(1, 4)
+
+
+alert(sum3)

@@ -84,48 +84,9 @@ function mergeNames(userId, passworidId) {
   return mergedNames;
 }
 
-// Contoh penggunaan fungsi mergeNames()
+// Contoh penggunaan function mergeNames()
 const userId = ["Alice", "Bob", "Charlie"];
 const passworidId = ["Dave", "Eve", "Frank"];
 
 const mergedNames = mergeNames(userId, passworidId);
 console.log(mergedNames);
-
-
-function setCookie(name, value, days) {
-    let expires = "";
-    if (days) {
-        let date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + value + expires + "; path=/";
-}
-
-// Contoh penggunaan:
-setCookie('username', 'john_doe', 30); // Menetapkan cookie 'username' dengan nilai 'john_doe' yang berlaku selama 30 hari
-
-function getCookie(name) {
-    let nameEQ = name + "=";
-    let cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i++) {
-        let cookie = cookies[i];
-        while (cookie.charAt(0) === ' ') {
-            cookie = cookie.substring(1, cookie.length);
-        }
-        if (cookie.indexOf(nameEQ) === 0) {
-            return cookie.substring(nameEQ.length, cookie.length);
-        }
-    }
-    return null;
-}
-
-// Contoh penggunaan:
-let username = getCookie('username'); // Mendapatkan nilai cookie 'username'
-
-function deleteCookie(name) {
-    document.cookie = name + '=; Max-Age=-99999999;';
-}
-
-// Contoh penggunaan:
-deleteCookie('username'); // Menghapus cookie 'username'

@@ -16,6 +16,34 @@
     <marquee scrollamount="10" class="bg-red-400 border rounded-2xl">
         Test Dom Javascript
     </marquee>
+    <nav class="bg-gray-800 p-4">
+        <div class="flex items-center justify-between lg:mx-36">
+            <div>
+                <a href="#" class="text-white font-bold">Contoh</a>
+            </div>
+            <div class="flex md:hidden">
+                <button id="toggleButton" class="text-white focus:outline-none">
+                    <div class="hamburger text-white" id="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Services</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4">
+            <a href="index.html" class="block text-white">Home</a>
+            <a href="#" class="block text-white">About</a>
+            <a href="#" class="block text-white">Services</a>
+            <a href="#" class="block text-white">Contact</a>
+        </div>
+    </nav><br>
     <button id="btn1" class="border border-black px-3 mx-2">Klik Disini 1</button>
     <button id="btn2" class="border border-black px-3 mx-2">Klik Disini 2</button>
     <section>
@@ -81,7 +109,8 @@
     <h1 class="text-3xl mx-3 lg:px-48 pt-12 w-1/2 ">
         Hemat Belanja
     </h1>
-    <p class="pt-3 mx-3 float-end">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate animi quae eaque
+    <p class="pt-3 mx-3 float-end">Lorem, ipsum dolor sit amet consectetur adipisicing elit.6 Cupiditate animi quae
+        eaque
         culpa
         eum totam quaerat quia! Sequi ab eum omnis aspernatur adipisci? Quod dicta perferendis doloremque incidunt
         repellat sint, iusto laborum atque, veritatis repudiandae magni totam quidem temporibus unde eveniet.
@@ -89,4 +118,21 @@
         amet consectetur adipisicing elit. Accusamus, sint. Doloremque, modi blanditiis cupiditate ipsa nobis recusandae
         minus in commodi ut eligendi delectus tenetur beatae corrupti placeat odit animi laboriosam?</p>
 </div>
+
+<script>
+    document.getElementById('toggleButton').addEventListener('click', function () {
+        var menu = document.getElementById('mobileMenu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+
+    //animasi hamburger
+    document.getElementById('hamburger').addEventListener('click', function() {
+    this.classList.toggle('open');
+});
+</script>
+
 </html>

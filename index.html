@@ -13,11 +13,8 @@
 </head>
 
 <body>
-    <marquee scrollamount="10" class="bg-red-400 border rounded-2xl">
-        Test Dom Javascript
-    </marquee>
-    <nav class="bg-gray-800 p-4">
-        <div class="flex items-center justify-between lg:mx-36">
+    <nav class="bg-gray-800 p-4 fixed z-30 w-full">
+        <div class="flex items-center justify-between lg:mx-36 ">
             <div>
                 <a href="#" class="text-white font-bold">Contoh</a>
             </div>
@@ -43,9 +40,16 @@
             <a href="#" class="block text-white">Services</a>
             <a href="#" class="block text-white">Contact</a>
         </div>
-    </nav><br>
-    <button id="btn1" class="border border-black px-3 mx-2">Klik Disini 1</button>
-    <button id="btn2" class="border border-black px-3 mx-2">Klik Disini 2</button>
+    </nav>
+    <div class="pt-16">
+        <button id="btn1" class="border border-black px-3 mx-2">Klik Disini 1</button>
+        <button id="btn2" class="border border-black px-3 mx-2">Klik Disini 2</button>
+    </div>
+    <div class="pt-3">
+        <marquee scrollamount="10" class="bg-red-400 border rounded-2xl">
+            Test Dom Javascript
+        </marquee>
+    </div>
     <section>
         <div class="lg:flex">
             <h1 class="text-3xl mx-3 w-1/2 lg:px-48 lg:py-20 pt-3">Belajar Javascript</h1><br>
@@ -130,9 +134,9 @@
     });
 
     //animasi hamburger
-    document.getElementById('hamburger').addEventListener('click', function() {
-    this.classList.toggle('open');
-});
+    document.getElementById('hamburger').addEventListener('click', function () {
+        this.classList.toggle('open');
+    });
 </script>
 
 </html>

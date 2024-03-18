@@ -55,6 +55,10 @@
 
 // Function yang diterapkan di Industri
 
+// Return -> console.log()
+const data = 1
+console.log(data)
+
 // cara 1 keyword new function
 const sum1 = new Function("x", "y", "console.log(x+y)");
 
@@ -90,3 +94,4 @@ const passworidId = ["Dave", "Eve", "Frank"];
 
 const mergedNames = mergeNames(userId, passworidId);
 console.log(mergedNames);
+

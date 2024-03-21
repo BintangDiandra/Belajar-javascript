@@ -53,11 +53,11 @@
 
 // Return -> console.log()
 //Contoh Pertama
-const data = 1                                     // Peringatan : console.log() harus dibawah dan variabel harus diatas console.log() | Kalau const maka Js tidak mengenal data tersebut
-console.log(data)
+const data = 1; // Peringatan : console.log() harus dibawah dan variabel harus diatas console.log() | Kalau const maka Js tidak mengenal data tersebut
+console.log(data);
 
-var data2 = 2
-console.log(data2)                                // Peringatan : console.log() harus dibawah dan variabel harus diatas console.log()  | Kalau var maka Js mengenal data tersebut namun undifined
+var data2 = 2;
+console.log(data2); // Peringatan : console.log() harus dibawah dan variabel harus diatas console.log()  | Kalau var maka Js mengenal data tersebut namun undifined
 
 // cara 1 keyword new function
 const sum1 = new Function("x", "y", "console.log(x+y)");
@@ -72,7 +72,7 @@ const sum3 = (x, y) => {
   console.log(x + y);
 };
 
-sum1(5, 1);                                       // variabel diatas console.log() dinamakan hoisting 
+sum1(5, 1); // variabel diatas console.log() dinamakan hoisting
 sum2(1, 2);
 sum3(1, 4);
 
@@ -95,41 +95,36 @@ sum3(1, 4);
 // const mergedNames = mergeNames(userId, passworidId);
 // console.log(mergedNames);
 
-
-
-
 // Contoh pembuatan random angka/number di Javascript menggunakan Function
 function randomize1() {
-    console.log(~~(Math.random() * 1000))
+  console.log(~~(Math.random() * 1000));
 }
 
-randomize1()
+randomize1();
 
 // Contoh pembuatan random huruf/string di Javascript menggunakan Function tetapi dengan if dan else
 function randomize2() {
-  const randomNumber = ~~ (Math.random() * 1000)
+  const randomNumber = ~~(Math.random() * 1000);
   if (randomNumber < 500) {
-      console.log('Angka melebihi 500')
+    console.log("Angka melebihi 500");
   } else {
-      console.log('Angka kurang dari 500')
+    console.log("Angka kurang dari 500");
   }
 }
 
-randomize2()
-
+randomize2();
 
 // contoh pembuatan random huruf/string di Javascript menggunakan Function
 function makeid(length) {
-    var result = '';
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    var charactersLength = characters.length;
-    for (var i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));                //Dua ini sangat penting untuk membuat token/generate password
-    }
-    return result;
+  var result = "";
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength)); //Dua ini sangat penting untuk membuat token/generate password
+  }
+  return result;
 }
-console.log(makeid(10))
-
+console.log(makeid(10));
 
 /* Tugas
 (A)
@@ -145,40 +140,95 @@ console.log(makeid(10))
     -jumlah hari masuk kerja
 **/
 
+
 // jAWABAN (A)
 // 1. Menghitung luas lingkaran
 
-const luasLingkaran = (jariJari) => {
-    const phi = 3.14
-    const luas = phi * jariJari * jariJari
-    return luas
+const luasLingkaran = (jariJari) => {                           //Manual using function
+  const phi = 3.14
+  const luas = phi * jariJari * jariJari
+  return luas
 }
 
 console.log('Luas Lingkaran =', luasLingkaran(10))
 
 //2. Luas segitiga
-const luasSegitiga = (alas, tinggi) => {
-    const luas = alas * tinggi / 2
-    return luas
+const luasSegitiga = (alas, tinggi) => {                        //Manual using function
+  const luas = alas * tinggi / 2
+  return luas
 }
 
 console.log('Luas Segitiga =', luasSegitiga(12, 30))
 
 //3. Luas persegi panjang
-const luasPersegiPanjang = (panjang, lebar) => {
-    const luas = panjang * lebar
-    return luas 
+const luasPersegiPanjang = (panjang, lebar) => {                //Manual using function
+  const luas = panjang * lebar
+  return luas
 }
 
 console.log('Luas Persegi Panjang =', luasPersegiPanjang(2, 40))
 
 //4. Luas jajargenjang
-const luasJajargenjang = (alas, tinggi) => {
-    const luas = alas * tinggi
-    return luas
+const luasJajargenjang = (alas, tinggi) => {                    //Manual using function
+  const luas = alas * tinggi
+  return luas
 }
 
 console.log('Luas Jajargenjang =', luasJajargenjang(4, 12))
+
+
+
+
+
+/*
+//Contoh Jawaban (A) Versi Lebih panjang
+
+function lingkaran() {
+  const r = parseInt(prompt("Berapa jari-jarinya ? "));
+  const luas = 3.14 * r * r;
+  alert("Luasnya adalah " + luas + " cm");
+}
+function segitiga() {
+  const a = parseInt(prompt("Berapa alasnya ? "));
+  const t = parseInt(prompt("Berapa tingginya ? "));
+  const luas = (a * t) / 2;
+  alert("Luasnya adalah " + luas + " cm");
+}
+function persegipanjang() {
+  const p = parseInt(prompt("Berapa panjangnya ? "));
+  const l = parseInt(prompt("Berapa lebarnya ? "));
+  const luas = p * l;
+  alert("Luasnya adalah " + luas + " cm");
+}
+function jajargenjang() {
+  const a = parseInt(prompt("Berapa alasnya ? "));
+  const t = parseInt(prompt("Berapa tingginya ? "));
+  const luas = (a * t) / 2;
+  alert("Luasnya adalah " + luas + " cm");
+}
+let y = parseInt(
+  prompt(
+    "Mau menghitung luas apa ? \n 1. Luas Lingkaran \n 2. Luas Segitiga \n 3. Luas Persegi Panjang \n 4. Luas Jajargenjang"
+  )
+);
+switch (y) {
+  case 1:
+    lingkaran();
+    break;
+  case 2:
+    segitiga();
+    break;
+  case 3:
+    persegipanjang();
+    break;
+  case 4:
+    jajargenjang();
+    break;
+}
+**/
+
+
+
 
 // JAWABAN (B)
 /* 1. menghitung total gaji yang didapat dalam satu bulan dengan input minimal:
@@ -186,5 +236,3 @@ console.log('Luas Jajargenjang =', luasJajargenjang(4, 12))
     -gaji perhari
     -jumlah hari masuk kerja
 **/
-
-

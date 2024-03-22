@@ -236,3 +236,19 @@ switch (y) {
     -gaji perhari
     -jumlah hari masuk kerja
 **/
+
+// function gajiBulanan(gajiPokok, gajiPerHari, jumlahHariKerja) {         // Cara Manual menggunakan function
+//   const totalGaji = gajiPokok + (gajiPerHari * jumlahHariKerja);
+//   return totalGaji
+// }                                                                     
+
+// console.log('Total Gaji =', gajiBulanan(4_500_000, 10_000, 10))         // gajiBulanan(gajiPokok(Masukan Angka), gajiPerHari(Masukan Angka), jumlahHariKerja(Masukan Angka))
+
+// let nama = prompt('Nama karyawan :');                                   // Cara Cepat menggunakan function
+// let gaji = parseInt(prompt('Gaji perhari :'));  
+// let hari = parseInt(prompt('Jumlah hari masuk kerja :'));
+// totalGaji(gaji, hari);
+// function totalGaji(gaji, hari) {
+//   const total = gaji * hari;
+//   alert('Karyawan bernama ' + nama + ' bekerja selama ' + hari + ' hari memiliki gaji sebulan sebesar Rp ' + total);
+// }

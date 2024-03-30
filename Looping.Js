@@ -18,3 +18,15 @@ for(let Data = 1; Data <= 5; Data++) {
 // z = 6 karena z sudah lebih dari sama dengan 5
 // 👇👇👇
 // end of loop tidak akan masuk 
+
+
+function randomize1() {
+    const randomNumber = ~~(Math.random() * 5);
+    if(randomNumber < 2) {
+        console.log("Masuk Postif");
+    } else {
+        console.log("Masuk Negatif");
+    }
+}
+
+randomize1()

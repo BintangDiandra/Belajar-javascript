@@ -5,7 +5,7 @@ Materi Looping Javascript
 * While & Do While
 **/
 
-for(let Data = 1; Data <= 5; Data++) {     
+for (let Data = 1; Data <= 5; Data++) {
     console.log('Urutan Data -', Data)                                    // Ini adalah cara looping sederhana
 }
 
@@ -22,7 +22,7 @@ for(let Data = 1; Data <= 5; Data++) {
 
 function randomize1() {
     const randomNumber = ~~(Math.random() * 5);
-    if(randomNumber < 2) {
+    if (randomNumber < 2) {
         console.log("Masuk Postif");
     } else {
         console.log("Masuk Negatif");
@@ -30,3 +30,21 @@ function randomize1() {
 }
 
 randomize1()
+
+// var y = 5
+// var x = 100
+// var i = x + y
+
+
+// console.log(i)
+
+
+
+var sum3 = (x, y) => {
+    console.log(x + y);
+}
+
+sum3(2, 2)
+
+
+

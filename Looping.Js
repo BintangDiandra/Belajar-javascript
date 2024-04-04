@@ -5,7 +5,7 @@ Materi Looping Javascript
 * While & Do While
 **/
 
-for (let Data = 1; Data <= 5; Data++) {
+for (let Data = 0; Data <= 5; Data++) {
     console.log('Urutan Data -', Data)                                    // Ini adalah cara looping sederhana
 }
 

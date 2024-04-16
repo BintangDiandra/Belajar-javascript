@@ -27,41 +27,41 @@ for (let DataGanjil = 0; DataGanjil <= 5; DataGanjil++) {
 // }
 
 //Let Menggunakan While
-let xGanjil = 1                                                             // Contoh While Ganjil Looping
-while (xGanjil <= 5) {
-    if(xGanjil % 2 == 1)
-    console.log('Urutan Data X Ganjil -', xGanjil)
-    xGanjil++
-}
+// let xGanjil = 1                                                             // Contoh While Ganjil Looping
+// while (xGanjil <= 5) {
+//     if(xGanjil % 2 == 1)
+//     console.log('Urutan Data X Ganjil -', xGanjil)
+//     xGanjil++
+// }
 
-let xGenap = 1                                                             // Contoh While Genap Looping    
-while (xGenap <= 5) {
-    if(xGenap % 2 !== 1)
-    console.log('Urutan Data X Genap -', xGenap)
-    xGenap++
-}
+// let xGenap = 1                                                             // Contoh While Genap Looping    
+// while (xGenap <= 5) {
+//     if(xGenap % 2 !== 1)
+//     console.log('Urutan Data X Genap -', xGenap)
+//     xGenap++
+// }
 
-// Contoh Menggunakan Do While
-let y = 1
-do {
-    console.log('Urutan Data Y -', y)
-    y++
-}while(y <= 5)
+// // Contoh Menggunakan Do While
+// let y = 1
+// do {
+//     console.log('Urutan Data Y -', y)
+//     y++
+// }while(y <= 5)
 
-// Contoh Menggunakan Do While
-let yGenap = 1                                                             // Do While Genap
-do {
-    if(yGenap % 2 !== 1)
-    console.log('Urutan Data yGenap -', yGenap)
-    yGenap++
-}while(yGenap <= 5)
+// // Contoh Menggunakan Do While
+// let yGenap = 1                                                             // Do While Genap
+// do {
+//     if(yGenap % 2 !== 1)
+//     console.log('Urutan Data yGenap -', yGenap)
+//     yGenap++
+// }while(yGenap <= 5)
 
-let yGanjil = 1                                                            //Do While Ganjil
-do {
-    if(yGanjil % 2 == 1)
-    console.log('Urutan Data yGanjil -', yGanjil)
-    yGanjil++
-}while(yGanjil <= 5)
+// let yGanjil = 1                                                            //Do While Ganjil
+// do {
+//     if(yGanjil % 2 == 1)
+//     console.log('Urutan Data yGanjil -', yGanjil)
+//     yGanjil++
+// }while(yGanjil <= 5)
 
 
 // Urutan data - 1   --------------- z  = 2
@@ -116,11 +116,12 @@ const x =[3, 5, 12];
 // console.log(`Total nilai adalah ${total} karena 3 + 5 + 12 = ${total}`);
 
 //do while
-//const x = [3, 5, 12];
-//let total = 0;
-//let c = 0;
-//do {
-//  total += x[c];
-//  c++;
-//} while (c < x.length);
-//console.log(`Total nilai adalah ${total} karena 3 + 5 + 12 = ${total}`);
+const x = [3, 5, 12];
+    let total = 0;
+    let c = 0;
+        do {
+        total += x[c];
+        c++;
+    } while (c < x.length);
+    console.log(`Total nilai Data x ${total} karena 3 + 5 + 12 = ${total}`);
+

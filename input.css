@@ -1,7 +1,7 @@
 /* Import Font */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100;1,200&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap')
 /* Custom Font CSS */
 body {
   
@@ -18,10 +18,13 @@ h1 {
 }
 
 p {
-  font-family: "Kanit", sans-serif;
-  font-family: "PT Serif", serif;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-
 
 /* Hamburger Dan Animasi CSS*/
 .hamburger {

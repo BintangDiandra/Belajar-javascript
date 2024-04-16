@@ -13,8 +13,10 @@
 </head>
 
 <body>
-    <nav class="bg-gray-800 p-4 fixed z-30 w-full">
-        <div class="flex items-center justify-between lg:mx-36 ">
+    <!-- Navbar Responsive -->
+
+    <nav class="bg-gray-800 p-4 fixed z-30 w-full rounded-xl md:rounded-none lg:rounded-none shadow-xl bg-opacity-80">
+        <div class="flex items-center justify-between lg:mx-36 md:mx-36">
             <div>
                 <a href="#" class="text-white font-bold">Contoh</a>
             </div>
@@ -27,6 +29,8 @@
                     </div>
                 </button>
             </div>
+
+            <!-- Navbar Bagian Laptop/PC -->
             <div class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-white mx-3 hover:text-slate-500">Home</a>
                 <a href="#" class="text-white mx-3 hover:text-slate-500">About</a>
@@ -34,7 +38,9 @@
                 <a href="#" class="text-white mx-3 hover:text-slate-500">Contact</a>
             </div>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+
+        <!-- Navbar Bagian Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2 mx-12">
             <a href="index.html"
                 class="block text-white border border-white text-center rounded-xl hover:bg-slate-500">Home</a>
             <a href="#" class="block text-white border border-white text-center rounded-xl hover:bg-slate-500">About</a>
@@ -44,15 +50,34 @@
                 class="block text-white border border-white text-center rounded-xl hover:bg-slate-500">Contact</a>
         </div>
     </nav>
+    <!-- Isian Responsive -->
     <div class="pt-16">
-        <button id="btn1" class="border border-black px-3 mx-2">Klik Disini 1</button>
-        <button id="btn2" class="border border-black px-3 mx-2">Klik Disini 2</button>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-y-5 md:gap-y-5 gap-y-5">
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                1</button>
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                2</button>
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                3</button>
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                4</button>
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                5</button>
+            <button id="btn2"
+                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
+                6</button>
+        </div>
     </div>
 
 </body>
 
 <script>
-    //Hambuger Menu
+    //Hambuger Click Menu
     document.getElementById('toggleButton').addEventListener('click', function () {
         var menu = document.getElementById('mobileMenu');
         if (menu.classList.contains('hidden')) {
@@ -62,7 +87,7 @@
         }
     });
 
-    //animasi hamburger
+    //Animasi hamburger CSS
     document.getElementById('hamburger').addEventListener('click', function () {
         this.classList.toggle('open');
     });

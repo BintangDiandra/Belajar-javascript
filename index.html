@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="input.css" rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
     <nav class="bg-gray-800 p-4 fixed z-30 w-full rounded-xl md:rounded-none lg:rounded-none shadow-xl bg-opacity-80">
         <div class="flex items-center justify-between lg:mx-36 md:mx-36">
             <div>
-                <a href="#" class="text-white font-bold">Contoh</a>
+                <a href="#" class="text-white font-bold">contoh</a>
             </div>
             <div class="flex md:hidden">
                 <button id="toggleButton" class="text-white focus:outline-none">
@@ -52,25 +53,37 @@
     </nav>
     <!-- Isian Responsive -->
     <div class="pt-16">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-y-5 md:gap-y-5 gap-y-5">
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                1</button>
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                2</button>
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                3</button>
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                4</button>
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                5</button>
-            <button id="btn2"
-                class="border border-black px-3 mx-5 md:mx-14 lg:mx-14 py-2 bg-green-400 text-black font-bold rounded-3xl">Artikel
-                6</button>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 gap-x-10 gap-y-10 mx-10 md:mx-10 lg:mx-10 strecth">
+            <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn0-production-images-kly.akamaized.net/ZCWkVO-avnVGRE6YChSGhDktVqA=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1607139/original/006198300_1495981000-Fishing-Sunset_iStock.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Artikel 1</h2>
+                  <p>Seorang Developer menyerah dan berpindah profesi menjadi pemancing</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Read Now !</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="https://asset-2.tstatic.net/manado/foto/bank/images/kelompok-organisasi-papua-merdeka-opm.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Artikel 2</h2>
+                  <p>KKB48 mengadakan konser di jakarta</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Read Now !</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="https://assets.ggwp.id/2023/12/E-56-640x360.jpg" class="object-fill" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Artikel 3</h2>
+                  <p>GTA VI Akan rilis 2029 akibat macet pengembangan</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Read Now !</button>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 
